@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alisa Maharani Husaen | English Language Education</title>
+  <meta name="description" content="Portfolio of Alisa Maharani Husaen, a Master's student in English Language Education at Universitas Negeri Yogyakarta: teaching, material development, academic writing and research.">
+  <meta name="theme-color" content="#f1eafb">
+
+  <!-- Social preview (WhatsApp, LinkedIn, X, etc.) -->
+  <!-- TODO setelah deploy: ganti GANTI-DOMAIN-ALISA dengan domain asli, dan taruh og-image.png (1200x630) di folder yang sama -->
+  <meta property="og:title" content="Alisa Maharani Husaen | English Language Education">
+  <meta property="og:description" content="Teaching, material development, academic writing and research in English language education.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://GANTI-DOMAIN-ALISA/">
+  <meta property="og:image" content="https://GANTI-DOMAIN-ALISA/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%231f1235'/%3E%3Ctext x='50' y='73' font-size='66' text-anchor='middle' fill='%23ff9fc9' font-family='Georgia,serif'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,700;1,400&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Opening: greetings in different languages, then the page slides up -->
+  <div class="loader" aria-hidden="true">
+    <p class="loader__word" id="greet">Hello</p>
+    <p class="loader__name">Alisa Maharani Husaen</p>
+    <div class="loader__bar"><i></i></div>
+  </div>
+  <div class="curtain" aria-hidden="true"></div>
+
+  <!-- Small label that follows the pointer over certificate rows -->
+  <div class="follow" aria-hidden="true"><span>Open</span></div>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top">Alisa</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </header>
+
+  <div class="menu" id="menu">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <h1 class="hero__title" aria-label="Alisa Maharani Husaen">
+            <span class="line"><span>Alisa</span></span>
+            <span class="line"><span>Maharani</span></span>
+            <span class="line"><span>Husaen</span></span>
+          </h1>
+          <p class="hero__role hrv">English language educator and materials developer. Studying for a Master's at Universitas Negeri Yogyakarta, aiming to become a lecturer and education researcher.</p>
+          <div class="hero__cta hrv">
+            <a class="btn" href="#work">See my work</a>
+            <a class="btn btn--ghost" href="#certificates">Certificates</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <p class="note hrv" aria-hidden="true">
+            that's me!
+            <svg viewBox="0 0 90 60" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8 C 30 3, 62 14, 70 46"/><path d="M57 37 L70 49 L79 33"/></svg>
+          </p>
+          <figure class="polaroid">
+            <span class="tape tape--top" aria-hidden="true"></span>
+            <div class="polaroid__photo">
+              <span class="polaroid__ph" aria-hidden="true">A</span>
+              <!-- FOTO: simpan fotomu sebagai alisa.jpg di folder yang sama dengan index.html (potret 4:5, lebar sekitar 900px, di bawah 300 KB). Kalau file belum ada, tampil huruf A. -->
+              <img src="alisa.jpg" alt="Portrait of Alisa Maharani Husaen" width="800" height="1000" fetchpriority="high" onerror="this.remove()">
+            </div>
+            <figcaption>Alisa</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Washi-tape band: skill words keep running, faster while you scroll -->
+    <div class="band" aria-hidden="true">
+      <div class="band__track">
+        <span>Teaching English</span><i></i><span>Material development</span><i></i><span>Academic writing</span><i></i><span>Speaking skills</span><i></i><span>Cooperative learning</span><i></i><span>Educational technology</span><i></i><span>Research</span><i></i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2 class="sr">About</h2>
+      <p class="about__text">
+        I'm a Master's student in <mark style="--hl:var(--pink)">English Language Education</mark> at Universitas Negeri Yogyakarta.
+        I'm drawn to <mark style="--hl:var(--butter)">communicative, interactive learning</mark> that fits what students actually need,
+        and to using technology to support <mark style="--hl:var(--mint)">speaking, engagement and collaboration</mark>.
+        Along the way I develop teaching materials, write academically and research how English is best taught.
+      </p>
+      <dl class="facts">
+        <div><dt>Studying</dt><dd>Master's in English Language Education, Universitas Negeri Yogyakarta, 2026 to present</dd></div>
+        <div><dt>Background</dt><dd>Bachelor's degree (S1), completed</dd></div> <!-- TODO: isi nama program studi S1 dan tahun lulus kalau mau ditampilkan -->
+        <div><dt>Teaching practicum</dt><dd>SMA Negeri 1 Prambanan Klaten, July to September 2026</dd></div>
+        <div><dt>Interests</dt><dd>Speaking skills, material development, academic writing, educational technology</dd></div>
+      </dl>
+    </section>
+
+    <!-- WORK: three sheets of different paper, stacking as you scroll -->
+    <section class="work" id="work">
+      <h2 class="section-title">Research, teaching and community work</h2>
+
+      <div class="sheets">
+
+        <article class="sheet sheet--ruled" style="--i:0;--tilt:-.5deg;--tape:var(--pink-tape)">
+          <span class="tape tape--top" aria-hidden="true"></span>
+          <p class="sheet__note" aria-hidden="true">my research</p>
+          <div class="sheet__grid">
+            <header class="sheet__head">
+              <h3>Koop-Tech</h3>
+              <p class="sheet__sub">Video-based speaking materials for senior high school</p>
+              <p class="sheet__meta">Kurikulum Merdeka, Phase E (Grade X)</p>
+            </header>
+            <div class="sheet__body">
+              <div class="sheet__text">
+                <p>Koop-Tech blends cooperative learning with technology to help students speak with more confidence. Short videos act as the input, followed by speaking practice, activity sheets, group discussion and a guide for teachers.</p>
+                <p>The materials target giving opinions, joining discussions, building arguments, short presentations, vocabulary and fluency. It is a Design and Development Research project, so the goal is to develop and validate the materials rather than test their effectiveness in an experiment.</p>
+              </div>
+              <ol class="steps">
+                <li>Needs analysis</li>
+                <li>Product development</li>
+                <li>Expert validation</li>
+              </ol>
+              <p class="sheet__title-note">Working title: The Development of Video-Based Koop-Tech Learning Materials to Support Students' Speaking Skills in Senior High School</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="sheet sheet--grid" style="--i:1;--tilt:.6deg;--tape:var(--lilac)">
+          <span class="tape tape--top" aria-hidden="true"></span>
+          <p class="sheet__note" aria-hidden="true">in the classroom</p>
+          <div class="sheet__grid">
+            <header class="sheet__head">
+              <h3>Teaching practicum</h3>
+              <p class="sheet__sub">SMA Negeri 1 Prambanan Klaten, English for Grade XI</p>
+              <p class="sheet__meta">July to September 2026</p>
+            </header>
+            <div class="sheet__body">
+              <div class="sheet__text">
+                <p>I planned and taught lessons on giving and expressing opinions, descriptive text, adjective order and narrative text, mixing reading, writing, listening and presentation activities.</p>
+                <p>Alongside teaching I prepared teaching modules, student worksheets (LKPD), slide decks, assessments and clear class instructions, and kept lessons lively with educational games, discussions, writing practice and student presentations.</p>
+              </div>
+              <ul class="tags">
+                <li>Giving opinions</li><li>Descriptive text</li><li>Adjective order</li><li>Narrative text</li><li>Teaching modules</li><li>LKPD</li><li>Assessment</li><li>Educational games</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="sheet sheet--dots" style="--i:2;--tilt:-.4deg;--tape:var(--butter)">
+          <span class="tape tape--top" aria-hidden="true"></span>
+          <p class="sheet__note" aria-hidden="true">beyond school</p>
+          <div class="sheet__grid">
+            <header class="sheet__head">
+              <h3>KKN and English Club</h3>
+              <p class="sheet__sub">Desa Jati, Bantul, and senior high school students</p>
+              <p class="sheet__meta">Ongoing, October 2026</p>
+            </header>
+            <div class="sheet__body">
+              <div class="sheet__text">
+                <p>For my community service program (KKN) in Desa Jati, Bantul, I am running English learning activities that are fun and fit what the community needs.</p>
+                <p>I am also running an English Club for senior high school students, built around speaking practice, language games, teamwork and confidence in using English.</p>
+              </div>
+              <ul class="tags">
+                <li>Community service</li><li>Speaking practice</li><li>Language games</li><li>Group work</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS, written like dictionary entries -->
+    <section class="skills" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="entries">
+
+        <article class="entry">
+          <h3>teaching English <span class="pos">n.</span></h3>
+          <ol>
+            <li>Planning English lessons around communicative activities.</li>
+            <li>Designing speaking practice that gets every student talking.</li>
+            <li>Writing lesson materials, worksheets and assessments.</li>
+            <li>Using games and interactive tasks to raise participation.</li>
+          </ol>
+        </article>
+
+        <article class="entry">
+          <h3>material development <span class="pos">n.</span></h3>
+          <ol>
+            <li>Building English materials around what learners need.</li>
+            <li>Creating video-based lessons with matching activities.</li>
+            <li>Combining cooperative learning with technology.</li>
+            <li>Writing worksheets and activity guides for students and teachers.</li>
+          </ol>
+        </article>
+
+        <article class="entry">
+          <h3>academic writing <span class="pos">n.</span></h3>
+          <ol>
+            <li>Writing scholarly texts in English education.</li>
+            <li>Developing a research background, problem statement, objectives and method.</li>
+            <li>Finding, reading and reviewing academic references.</li>
+            <li>Writing research clearly in English.</li>
+          </ol>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GOALS -->
+    <section class="goals" id="goals">
+      <h2 class="section-title">Where I'm headed</h2>
+      <ul class="goals__list">
+        <li class="goal">
+          <h3><span class="sweep" style="--hl:var(--pink)">Lecturer</span></h3>
+          <p>Teach in higher education, develop curricula and materials, and mentor students.</p>
+        </li>
+        <li class="goal">
+          <h3><span class="sweep" style="--hl:var(--butter)">Education researcher</span></h3>
+          <p>Find out what learners need and develop English teaching practices that are more effective and relevant.</p>
+        </li>
+        <li class="goal">
+          <h3><span class="sweep" style="--hl:var(--mint)">English teacher</span></h3>
+          <p>Help students grow in communication, confidence and English skills through learning that means something to them.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PAPERS -->
+    <section class="papers" aria-labelledby="papers-title">
+      <div>
+        <h2 id="papers-title">Two journal papers</h2>
+        <p>Both are collected on my Semantic Scholar profile, so you can read them in one place.</p>
+      </div>
+      <a class="btn" href="https://www.semanticscholar.org/author/Alisa-Maharani-Husaen/2405028669" target="_blank" rel="noopener noreferrer">Open Semantic Scholar<span class="sr"> (opens in a new tab)</span></a>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="certs" id="certificates">
+      <h2 class="section-title">Certificates</h2>
+      <p class="certs__hint">tap or click a row to open the certificate</p>
+
+      <ul class="certs__list">
+
+        <li>
+          <a class="cert" href="https://drive.google.com/file/d/1SP1mN032XxXaKdWpDhujtJ3hwVmQV9my/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-follow="Open">
+            <span class="cert__main">
+              <span class="cert__role">Parallel session speaker</span>
+              <span class="cert__title"><span class="sweep">72nd TEFLIN International Conference</span></span>
+              <span class="cert__meta">Held together with the 10th ICEMS and the 2nd TESOL Research Colloquium, hosted by UIN Syarif Hidayatullah Jakarta, Indonesia.</span>
+            </span>
+            <span class="cert__date">October 7 to 9, 2026</span>
+            <span class="cert__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span>
+            <span class="sr">(opens in a new tab)</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="cert" href="https://drive.google.com/file/d/1in__lZ2x_nDonSa6mV4sr7lk6FM-0H8L/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-follow="Open">
+            <span class="cert__main">
+              <span class="cert__role">Presenter</span>
+              <span class="cert__title"><span class="sweep">6th Conference on English Language Teaching</span></span>
+              <span class="cert__meta">Theme: Decolonizing English in the Age of Artificial Intelligence: Rethinking Language, Literature, and Pedagogy. Held virtually.</span>
+            </span>
+            <span class="cert__date">June 18, 2026</span>
+            <span class="cert__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span>
+            <span class="sr">(opens in a new tab)</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="cert" href="https://drive.google.com/file/d/16imWhfRHWV2BhyBwS0LOWNNwKJuofVNc/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-follow="Open">
+            <span class="cert__main">
+              <span class="cert__role">Intellectual property certificate</span>
+              <span class="cert__title"><span class="sweep">IT-Based Strategies for Enhancing English Language Learning</span></span>
+              <span class="cert__meta">Sertifikat HKI (Hak Kekayaan Intelektual).</span>
+            </span>
+            <span class="cert__date">October 25, 2025</span>
+            <span class="cert__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span>
+            <span class="sr">(opens in a new tab)</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="cert" href="https://drive.google.com/file/d/1-ttbKcBdFjSFakRL_Sz7CpPPdl5TAsVK/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-follow="Open">
+            <span class="cert__main">
+              <span class="cert__role">Participant</span>
+              <span class="cert__title"><span class="sweep">Workshop on Academic Presentation</span></span>
+              <span class="cert__meta">Led by Asst. Prof. Dr. Bhasrvarin Iamsa-ard of Walailak University, held at Universitas Negeri Yogyakarta.</span>
+            </span>
+            <span class="cert__date">April 16, 2026</span>
+            <span class="cert__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span>
+            <span class="sr">(opens in a new tab)</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="cert" href="https://drive.google.com/file/d/1k-vUZnjh-IIttgagsVbOHN8Xvngrymz_/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-follow="Open">
+            <span class="cert__main">
+              <span class="cert__role">Participant</span>
+              <span class="cert__title"><span class="sweep">Integrating Cultural Wisdom with Digital Technology and AI for a Sustainable Future</span></span>
+              <span class="cert__meta">International seminar on bridging innovation, environmental stewardship and social impact.</span>
+            </span>
+            <span class="cert__date">October 15, 2025</span>
+            <span class="cert__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span>
+            <span class="sr">(opens in a new tab)</span>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- CONTACT -->
+  <footer class="contact" id="contact">
+    <h2>Let's talk about teaching, materials and research.</h2>
+    <!-- TODO: ganti email -->
+    <a class="contact__mail" href="mailto:alisamhrn24@gmail.com">alisamhrn24@gmail.com</a>
+    <div class="contact__links">
+      <a href="https://www.semanticscholar.org/author/Alisa-Maharani-Husaen/2405028669" target="_blank" rel="noopener noreferrer">Semantic Scholar</a>
+      <a href="https://instagram.com/alisamhrn" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+    <p class="signoff">thanks for stopping by, Alisa</p>
+    <div class="contact__foot">
+      <span>&copy; <span id="year">2026</span> Alisa Maharani Husaen</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
